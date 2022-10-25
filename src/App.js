@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import MHome from './Components/Pages/MHome';
 import View from './Components/Pages/View';
 import EditDetail from './Components/Pages/EditDetail';
+import CopyrightSec from './Components/Shared/Footer/CopyrightSec';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path='/view' element={<View></View>}></Route>
         <Route path='/edit' element={<EditDetail></EditDetail>}></Route>
       </Routes>
+      <CopyrightSec></CopyrightSec>
     </div>
   );
 }
