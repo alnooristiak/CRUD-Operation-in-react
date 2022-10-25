@@ -3,6 +3,7 @@ import React from 'react';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import CreateIcon from '@mui/icons-material/Create';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Link } from 'react-router-dom';
 
 const MHome = () => {
     return (
@@ -69,10 +70,16 @@ const MHome = () => {
                                 </div>
                                 <div className="col-3 text-center">
                                     <span className='text-info'>
-                                        <span><RemoveRedEyeIcon /></span>
+                                        <span>
+                                            <Link to='view'>
+                                                <RemoveRedEyeIcon />
+                                            </Link>
+                                        </span>
                                     </span>
                                     <span className='text-info'>
-                                        <CreateIcon/>
+                                        <Link to='edit'>
+                                            <CreateIcon/>
+                                        </Link>
                                     </span>
                                     <span className='text-danger'>
                                         <DeleteIcon/>
