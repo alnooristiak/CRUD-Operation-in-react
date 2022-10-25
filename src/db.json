@@ -1,5 +1,19 @@
 {
     "students": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+        {
+            "id": 1,
+            "stuname": "istiak",
+            "email": "istiak@gmail.com"
+        },
+        {
+            "id": 2,
+            "stuname": "shakila",
+            "email": "shakila@gmail.com"
+        },
+        {
+            "id": 3,
+            "stuname": "diba",
+            "email": "diba@gmail.com"
+        }
     ]
 }
