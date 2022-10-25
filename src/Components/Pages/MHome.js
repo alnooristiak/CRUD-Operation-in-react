@@ -1,9 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteIcon from '@mui/icons-material/Delete';
-import { Link } from 'react-router-dom';
+import List from './List/List';
 
 const MHome = () => {
     return (
@@ -16,7 +13,7 @@ const MHome = () => {
             <div className="container">
                 <div className="row my-3">
                     {/* Data form */}
-                    <div className="col-lg-6 col-md-6 col-12">
+                    <div className="col-lg-6 col-md-6 col-12 py-3">
                         <div className='bg-warning text-center p-2'>
                             <h4>Add Student</h4>
                         </div>
@@ -37,7 +34,7 @@ const MHome = () => {
                         </div>
                     </div>
                     {/* Data viewer */}
-                    <div className="col-lg-6 col-md-6 col-12">
+                    <div className="col-lg-6 col-md-6 col-12 py-3">
                         <div className="bg-info text-center p-2">
                             <h4>Student Data</h4>
                         </div>
@@ -58,34 +55,7 @@ const MHome = () => {
                                 </div>
                             </div>
                             {/* student data viewer info */}
-                            <div className='row bg-secondary p-1'>
-                                <div className="col-2 text-center">
-                                    <span className='text-white'>01</span>
-                                </div>
-                                <div className="col-3 text-center">
-                                    <span className='text-white'>al noor istiak</span>
-                                </div>
-                                <div className="col-4 text-center">
-                                    <span className='text-white'>istiak@gmail.com</span>
-                                </div>
-                                <div className="col-3 text-center">
-                                    <span className='text-info'>
-                                        <span>
-                                            <Link to='view'>
-                                                <RemoveRedEyeIcon />
-                                            </Link>
-                                        </span>
-                                    </span>
-                                    <span className='text-info'>
-                                        <Link to='edit'>
-                                            <CreateIcon/>
-                                        </Link>
-                                    </span>
-                                    <span className='text-danger'>
-                                        <DeleteIcon/>
-                                    </span>
-                                </div>
-                            </div>
+                            <List></List>
                         </div>
                     </div>
                 </div>
